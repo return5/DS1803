@@ -4,9 +4,11 @@ This is a library for using an arduino to communicate with an Maxim DS1803 dual 
 
 -- installation --
 
-    - easiest method is to open your arduino IDE
-        - sketch->include library->add.ZIP library  
-            - select DS1803.zip
+    - easiest method when using the arduino IDE
+        - download libary as a .zip file
+        - open arduino IDE
+            - navigate to sketch->include library->add.ZIP library  
+            - select DS1803.zip (or the name you gave the .zip file)
             - make sure your program has ' #include "DS1803.h" ' at the top
 
 -- functions ---
