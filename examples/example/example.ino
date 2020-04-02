@@ -7,7 +7,7 @@
         accepted addresses are A_000 through A_111.
         addresses are based on address lines of the device you want to read/write to. see README.txt and datasheet for more information
     calling function 'readWiper' allows user to read the current value of the wipers.
-    prints success/error messages to serial monitor.
+    prints messages to serial monitor.
 */              
 
 #include "DS1803.h"   //library file needed to read/write values to the DS1803 dual digital potentiometer
