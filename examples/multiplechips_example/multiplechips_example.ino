@@ -1,5 +1,5 @@
 /*                                           ### description ###      
-    example code for using the DS1803.h library with an arduino to control multiple DS1803 dual digital potentiometer. 
+    example code for using the DS1803.h library with an arduino to control multiple DS1803 dual digital potentiometers. 
     calling function 'initDS1803' starts communication with the DS1803.
     calling the function 'setWiper' allows user to write a value to the given wiper at a given address;
         Wipers are: WIPER_0, WIPER_1, WIPER_BOTH.  
@@ -15,7 +15,7 @@
         DEVICES[0] has address A_000 since A2,A1,A0 = 000
         DEVICES[1] has address A_001 since A2,A1,A0 = 001
         DEVICES[2] has address A_011 since A2,A1,A0 = 011
-    prints messages to serial monitor.
+    program prints messages to serial monitor.
 */              
 
 #include "DS1803.h"   //library file needed to read/write values to the DS1803 dual digital potentiometer
