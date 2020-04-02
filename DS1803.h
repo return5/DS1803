@@ -2,7 +2,7 @@
     Library file for using a DS1803 dual digital potentiometer with an arduino. 
     please see 'README.txt' for more information
 
-    Copyright (C) <2020>  <Chris Nichols>
+    Copyright (C) <2020>  <Chris Nichols. github/return5>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
