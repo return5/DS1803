@@ -60,7 +60,7 @@ static int checkValidValue(const int value) {
     }
 }
 
-//function to set value of wiper. takes in which wiper to write to and the value to write to it.
+//function to set value of wiper. takes in which address of device, wiper to write to and the value to write to it.
 void setWiper(const ADDRESS address,const int wiper, const int value) {    
     if(checkValidWiper(wiper) && checkValidValue(value)) {            //if both value and wiper are valid
         char c[25];                                                  //holds string to be printed
@@ -73,7 +73,7 @@ void setWiper(const ADDRESS address,const int wiper, const int value) {
     }
 }
 
-//function which reads the current value for both wipers and prints values to the serial monitor
+//function which reads the current value for both wipers at given address and prints values to the serial monitor
 void readWipers(const ADDRESS address) {
     int wiper = 0;                                                       //shows which wiper is being read.
     char c[15];                                                         //hold formatted string. 
