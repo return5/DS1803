@@ -14,7 +14,7 @@ This is a library for using an arduino to communicate with an Maxim DS1803 dual 
 -- functions ---
 
     - initDS1803()
-        - start communication wiht potentiometers.  call this before you do anything else
+        - start communication with potentiometers.  call this before you do anything else
 
     - writeWiper(address,wiper,value)
         - writes value to the given wiper at the given address
