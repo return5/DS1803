@@ -34,7 +34,7 @@
 //---------------------------------------------- enums ---------------------------------------------------
 //address of DS1803 based on the address lines A2,A1,A0. 
 //A_000 == address of DS1803 when A2,A1,A0 are all 0.
-//A_101 is addres of DS1803 when A2 = 1, A1 = 0, and A0 = 1.
+//A_101 is address of DS1803 when A2 = 1, A1 = 0, and A0 = 1.
 enum ADDRESS_LIST {A_000 = 0x28, A_001 = 0x29, A_010 = 0x2A, A_011 = 0x2B, A_100 = 0x2C, A_101 = 0x2D,A_110 = 0x2E,A_111 = 0x2F};
 
 //---------------------------------------------- typedefs ------------------------------------------------
@@ -42,10 +42,10 @@ typedef enum ADDRESS_LIST ADDRESS;
 
 //-------------------------------------------- prototypes -----------------------------------------
 
-//function to set value of wiper. takes in which wiper to write to and the value to write to it.
+//function to set value of wiper. takes in address of device, which wiper to write to and the value to write to it.
 void setWiper(const ADDRESS address, const int wiper, const int value);
 
-//function which reads the current value for both wipers and prints it to the serial monitor of the arduino
+//function which reads the current value for both wipers at given address and prints them to the serial monitor of the arduino
 void readWipers(const ADDRESS address);
 
 //function which starts serial communications and starts i2c communication with potentiometer
