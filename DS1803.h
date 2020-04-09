@@ -35,7 +35,7 @@
 //address of DS1803 based on the address lines A2,A1,A0. 
 //A_000 == address of DS1803 when A2,A1,A0 are all 0.
 //A_101 is address of DS1803 when A2 = 1, A1 = 0, and A0 = 1.
-enum ADDRESS_LIST {A_000 = 0x28, A_001 = 0x29, A_010 = 0x2A, A_011 = 0x2B, A_100 = 0x2C, A_101 = 0x2D,A_110 = 0x2E,A_111 = 0x2F};
+enum ADDRESS_LIST {A_000 = 0x28, A_001, A_010, A_011, A_100, A_101,A_110,A_111};
 
 //---------------------------------------------- typedefs ------------------------------------------------
 typedef enum ADDRESS_LIST ADDRESS;
