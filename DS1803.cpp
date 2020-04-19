@@ -25,10 +25,10 @@
 //-------------------------------------------- prototypes -----------------------------------------
 
 //function checks to make sure only a valid wiper was selected
-static inline int checkValidWiper(const int wiper);
+static int checkValidWiper(const int wiper);
 
 //function checks to makes sure value is a valid value in the range [0,255]
-static inline int checkValidValue(const int value);
+static int checkValidValue(const int value);
 
 //-------------------------------------------- code -----------------------------------------------
 
