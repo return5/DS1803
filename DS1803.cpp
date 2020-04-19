@@ -81,7 +81,6 @@ void readWipers(const ADDRESS address) {
     while(Wire.available()) {                                        // slave may send less than requested
         snprintf(c,15,"wiper %d is %d",wiper++,(int)Wire.read());    //format the string before printing
         Serial.println(c);                                     // print the formatted string
-        c[0] = '\0';                                           //end the string at the beggining to reset it for next iteration
     }                                                         
 }
 
