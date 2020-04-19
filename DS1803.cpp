@@ -36,8 +36,8 @@ static inline int checkValidValue(const int value);
 static int checkValidWiper(const int wiper) {
     char c[26];     //holds string to be printed
     switch(wiper) {  
-        case WIPER_0:
-        case WIPER_1:
+        case WIPER_0: //FALLTHROUGH
+        case WIPER_1: //FALLTHROUGH
         case WIPER_BOTH:
             return 1;  //valid wiper so return 1;
         default:
